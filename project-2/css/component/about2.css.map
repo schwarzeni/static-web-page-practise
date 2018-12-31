@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "mappings": ";AAAA;;;GAGG;AAIH,kBAAmB;EACjB,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,WAAW;EAEvB,gCAAc;IACZ,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,KAAK;IACb,KAAK,EAAE,IAAI;IACX,UAAU,EChBF,OAAO",
+  "sources": [
+    "about2.scss",
+    "../common/variable.scss"
+  ],
+  "names": [],
+  "file": "about2.css"
+}

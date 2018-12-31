@@ -1,0 +1,254 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 1200px;
+}
+
+.full-width {
+  width: 100vw !important;
+  min-width: 1200px;
+}
+
+
+nav {
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-logo-container {
+  flex-grow: 2;
+  position: relative;
+}
+
+.nav-logo-container>img {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  bottom: 0;
+  margin: auto;
+}
+
+.nav-option {
+  width: 100px;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  flex-grow: 0;
+}
+
+/* 大图片 */
+.banner {
+  position: relative;
+  height: 80vh;
+  background: url("../image/1.jpeg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner-image-mask {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #555;
+}
+
+.banner-word-container {
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 80vh;
+}
+
+.banner-word-container>a {
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+
+  bottom: 20vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  background-color: #f5704f;
+  text-decoration: none;
+
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+
+/* 主容器 */
+.main-body-container {
+  width: 100vw;
+}
+
+.main-body-container>section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* flex 布局 */
+.flex-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-3-item {
+  width: 350px;
+}
+
+.flex-2-item {
+  width: 540px;
+}
+
+/* 联系方式 */
+.contact {
+  height: 240px;
+}
+
+.contact-item {
+  height: 100%;
+  font-size: 18px;
+  color: #7D7C7F;
+  text-align: center;
+  line-height: 420px;
+
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact-item:nth-child(1) {
+  background-image: url("../image/weibo.png");
+}
+
+.contact-item:nth-child(2) {
+  background-image: url("../image/weixin.png");
+}
+
+.contact-item:nth-child(3) {
+  background-image: url("../image/QQ.png");
+}
+
+/* 显示照片 */
+
+.picture-show {
+  margin-top: 60px;
+  height: 400px;
+}
+
+.picture-show-item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-size: 310px 260px;
+}
+
+.picture-show-item>div {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.picture-show-item-header {
+  color: #7D7D7F;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 30px;
+}
+
+.picture-show-item-intro {
+  color: #BDBDBC;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 0;
+}
+
+
+.picture-show-item:nth-child(1) {
+  background-image: url("../image/03-01.jpg");
+}
+
+.picture-show-item:nth-child(2) {
+  background-image: url("../image/03-02.jpg");
+}
+
+.picture-show-item:nth-child(3) {
+  background-image: url("../image/03-03.jpg");
+}
+
+/* 来自相册的片 */
+.main-body-container>section:last-child {
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  padding: 25px 0;
+
+  text-align: center;
+}
+
+.main-body-container>section:last-child>h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(125, 124, 127);
+  font-family: 微软雅黑;
+}
+
+.photo-from-album-list {
+  margin-top: 10px;
+}
+
+.photo-from-album-list>article {
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: 470px 400px;
+}
+
+.photo-from-album-list-intro {
+  width: 470px;
+  position: absolute;
+  bottom: 30px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7D7C7F;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.photo-from-album-list>article:nth-child(1) {
+  background-image: url("../image/04-01.jpg");
+}
+
+.photo-from-album-list>article:nth-child(2) {
+  background-image: url("../image/04-02.jpg");
+}
+
+/* 底部 */
+footer {
+width: 100%;
+height: 100px;
+text-align: center;
+line-height: 100px;
+background-color: #292c34;
+color: #fff;
+font-size: 15px;
+}

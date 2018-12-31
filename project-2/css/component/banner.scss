@@ -1,0 +1,94 @@
+/**
+ *   作者：schwarzeni
+ *   作用：banner区样式
+ */
+@import "../common/variable";
+@import "nav";
+
+// 横幅大小
+$bannerContainerHeight: 700px;
+$bannerContainerWidth: 100%;
+
+// 表单容器大小
+$bannerFormContainerWidth: 500px;
+
+// 按钮大小
+$bannerFormBtnWidth: 120px;
+
+.banner-container {
+  width: $bannerContainerWidth;
+  height: $bannerContainerHeight;
+  //position: relative;
+  margin-top: $navHeigh;
+
+  background: url($bannerBgImgPath) no-repeat center center;
+  background-size: 100% 100%;
+
+  // 横幅罩层
+  .banner-layer {
+    position: absolute;
+    width: $bannerContainerWidth;
+    height: $bannerContainerHeight;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    // 横幅表单
+    .banner-form-container {
+      width: $bannerFormContainerWidth;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: $bannerContainerHeight/2;
+
+      /* 对输入框的设置 */
+      form {
+        * {
+          display: block;
+          width: 100%;
+          margin-bottom: 25px;
+          font-size: 12px;
+          height: 37px;
+          padding-left: 10px;
+          background-color: rgba(0, 0, 0, 0.3);
+          outline: none;
+          border: 1px solid rgba(255, 255, 255, .5);
+          border-radius: 5px;
+          color: rgba(255, 255, 255, 1);
+          font-family: $fontFamily;
+
+          transition-property: border;
+          transition-duration: .2s;
+        }
+
+        textarea {
+          height: 74px;
+          padding-top: 10px;
+        }
+
+        button {
+          width: $bannerFormBtnWidth;
+          margin: 0 auto;
+          transition-property: background-color;
+          transition-duration: .2s;
+          &:hover {
+            cursor: pointer;
+            border: none;
+            background-color: $mainColor;
+          }
+        }
+
+        input, textarea {
+          &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, .5);
+            padding-left: 10px;
+          }
+          &:focus {
+            border: 1.5px solid $mainColor;
+          }
+        }
+      }
+    }
+  }
+}

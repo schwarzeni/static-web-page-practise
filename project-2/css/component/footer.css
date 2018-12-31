@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ *   作者：schwarzeni
+ *   作用：底部样式
+ */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #07cbc9;
+    line-height: 60px;
+    text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

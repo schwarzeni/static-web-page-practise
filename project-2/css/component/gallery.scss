@@ -1,0 +1,78 @@
+/**
+ *   作者：schwarzeni
+ *   作用：gallery区
+ */
+@import "../common/reset";
+
+// gallery总宽度
+$galleryContainerWidth: 900px;
+$galleryPaddingSize: 10px;
+
+// gallery图片大小
+$galleryImgWidth: ($galleryContainerWidth - 6*$galleryPaddingSize)/3;
+$galleryImgHeight: $galleryImgWidth - 50;
+
+// gallery图片解说高度
+$galleryImgIntroHeight: 50px;
+
+.gallery-container {
+  box-sizing: content-box;
+  position: relative;
+  width: $galleryContainerWidth;
+  margin: 40px auto 0;
+
+  h1 {
+    @include header1
+  }
+
+  .divider {
+    @include divier;
+  }
+
+  .basic-intro {
+    @include basicIntroUnderH1;
+  }
+
+  // 图片展示区
+  .img-gallery-container {
+    margin-top: 20px;
+    position: relative;
+    box-sizing: content-box;
+
+    // 清除浮动
+    &::after {
+      @include clear-float;
+    }
+
+    .img-gallery-item {
+      width: $galleryImgWidth;
+      height: $galleryImgHeight;
+      float: left;
+      margin: $galleryPaddingSize;
+      position: relative;
+
+      // 设置图片
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          background: url(galleryImgPath($i)) no-repeat top center;
+          background-size: $galleryImgWidth $galleryImgWidth - $galleryImgIntroHeight;
+        }
+      }
+
+      // 图片介绍
+      .img-gallery-item-intro {
+        position: absolute;
+        bottom: 0;
+        width: $galleryImgWidth;
+        height: $galleryImgIntroHeight;
+        line-height: $galleryImgIntroHeight;
+        padding-left: 10px;
+        background-color: $blackColor;
+
+        color: $whiteColor;
+        font-size: 14px;
+      }
+    }
+  }
+
+}

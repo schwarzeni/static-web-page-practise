@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ *   作者：schwarzeni
+ *   作用：about2部分
+ */
+.about-2-container {
+    width: 100%;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.about-2-container .about-2-item {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background: #07cbc9;
+}
+
+/*# sourceMappingURL=about2.css.map */

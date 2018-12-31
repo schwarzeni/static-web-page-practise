@@ -1,0 +1,74 @@
+/**
+ *   作者：schwarzeni
+ *   作用：导航栏样式
+ */
+@import "../common/variable";
+@import "../common/reset";
+
+// 导航栏长度
+$navWidth: 100%;
+// 导航栏宽度
+$navHeigh: 60px;
+// 导航栏左右内边距
+$navLeftRightPaddingSize: 60px;
+
+// 标题字体大小
+$navLogoWidth: 200px;
+
+// 导航栏选项宽度
+$navOptionWidth: 80px;
+$navOptionFontSize: 13px;
+
+nav {
+  position: fixed;
+  top: 0;
+  width: $navWidth;
+  min-width: 1000px;
+  height: $navHeigh;
+  background-color: $mainColor;
+  padding: 0 $navLeftRightPaddingSize;
+
+  //TODO: bad code !
+  z-index: 100;
+
+  // 导航栏标题
+  header {
+    display: block;
+    height: $navHeigh;
+    line-height: $navHeigh;
+    float: left;
+
+    // 导航栏标题链接
+    a {
+      display: block;
+      width: $navLogoWidth;
+      height: $navHeigh;
+      background: url($navLogoPath) no-repeat center center;
+      background-size: 90% 60%;
+    }
+  }
+
+  // 导航栏选项
+  .nav-options-container {
+    float: right;
+    height: $navHeigh;
+
+    .nav-option {
+      display: block;
+      float: left;
+      width: $navOptionWidth;
+      line-height: $navHeigh;
+      text-align: center;
+
+      @include resetATag;
+      font-size: $navOptionFontSize;
+
+      &:hover {
+        background-color: $blackColor;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,18 @@
+/**
+ *   作者：schwarzeni
+ *   作用：底部样式
+ */
+@import "../common/variable";
+
+$footerHight: 70px;
+
+footer {
+  margin-top: 60px;
+  position: relative;
+  width: 100%;
+  height: $footerHight;
+  background-color: $mainColor;
+  line-height: $footerHight;
+  text-align: center;
+  color: $whiteColor;
+}

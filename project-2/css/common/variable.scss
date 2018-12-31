@@ -1,0 +1,21 @@
+$mainColor: #07cbc9;
+$blackColor: #000;
+$whiteColor: #fff;
+$fontFamily: Microsoft YaHei UI;
+
+// 导航栏左侧图片
+$navLogoPath: "../images/logo.png";
+// 横幅大图
+$bannerBgImgPath: "../images/banner3.jpg";
+// 关于第一部分图片
+$aboutImgPath: "../images/bb3.jpg";
+
+// 关于第二部分图片
+@function about2ImgPath($idx) {
+  @return "../images/b" + $idx + ".jpg";
+}
+
+// gallery的图片
+@function galleryImgPath($idx) {
+  @return "../images/03-0" + $idx + ".jpg";
+}

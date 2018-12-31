@@ -1,0 +1,90 @@
+/**
+ * 作者 schwarzeni
+ * 作用 重置一些样式
+ */
+@import "variable";
+
+html, body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// 清除浮动
+@mixin clear-float {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+// 大标题样式
+@mixin header1 {
+  font-size: $about1HeaderFontSize;
+  font-family: $fontFamily;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px auto 10px;
+}
+
+// 分割线样式
+@mixin divier {
+  border: 1px solid $mainColor;
+  height: 0;
+  width: 25px;
+  margin: 5px auto 10px;
+}
+
+// 标题下方简介样式
+@mixin basicIntroUnderH1 {
+  width: 450px;
+  height: 70px;
+  margin: 5px auto 5px;
+  text-align: center;
+  color: #7D7C7F;
+  font-family: $fontFamily;
+}
+
+// 重置<a>样式
+@mixin resetATag {
+  text-decoration: none;
+  color: $whiteColor;
+  font-family: $fontFamily;
+}
+
+// 一些按钮的样式
+@mixin outlineBtn {
+  box-sizing: content-box;
+  color: $whiteColor;
+  background: $blackColor;
+  border: 1.5px solid $blackColor;
+  transition-property: background-color;
+  transition-duration: .2s;
+
+  &:hover {
+    cursor: pointer;
+    background: transparent;
+    color: $blackColor;
+    border: 1.5px solid $blackColor;
+  }
+}
+
+// a标签转换为btn
+@mixin aToBtn {
+  display: block;
+  text-align: center;
+  font-family: $fontFamily;
+}
+
+// 箭头样式
+@mixin about2ArrayStyle {
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  top: $about2ItemHeight/2 - $about2ItemArraySize;
+}
