@@ -1,5 +1,0 @@
-1. 个人感觉这个页面比较复杂所以选择了用scss把样式拆分成组件形式 :-p
-2. 为了图方便就直接使用Intellij IDEA自带的file watcher工具对scss进行编译而没有用gulp或者webpack这些构建工具
-3. 样式主入口是css/main.scss
-4. 样式以及编译打包成css/main.css了
-5. 那个.css.map文件我不知道是干什么的
